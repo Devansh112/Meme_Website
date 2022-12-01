@@ -285,7 +285,7 @@
   }
 }
 
-@media screen and (max-width: 375px) {
+@media screen and (min-width: 375px) {
   .MainPage {
     .title_dark {
       color: white;
