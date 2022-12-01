@@ -1,0 +1,589 @@
+.MainPage {
+  min-height: 100vh;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  background-color: white;
+  justify-content: center;
+  align-items: center;
+  .title_dark {
+    color: white;
+  }
+  .title_light {
+    color: black;
+  }
+  .lightMode_meme_about {
+    width: 7%;
+    height: 15%;
+    background-color: black;
+    color: white;
+    border-radius: 8px;
+  }
+  .darkMode_meme_about {
+    width: 7%;
+    height: 15%;
+    background-color: white;
+    color: black;
+    border-radius: 8px;
+  }
+
+  h1 {
+    position: relative;
+    padding: 0;
+    margin: 0;
+    font-family: "Raleway", sans-serif;
+    font-weight: 300;
+    font-size: 40px;
+    color: #080808;
+    -webkit-transition: all 0.4s ease 0s;
+    -o-transition: all 0.4s ease 0s;
+    transition: all 0.4s ease 0s;
+  }
+
+  h1 span {
+    display: block;
+    font-size: 0.5em;
+    line-height: 1.3;
+  }
+  h1 em {
+    font-style: normal;
+    font-weight: 600;
+  }
+
+  /* === HEADING STYLE #1 === */
+  .one h1 {
+    text-align: center;
+    text-transform: uppercase;
+    padding-bottom: 5px;
+  }
+  .one h1:before {
+    width: 28px;
+    height: 5px;
+    display: block;
+    content: "";
+    position: absolute;
+    bottom: 3px;
+    left: 50%;
+    margin-left: -14px;
+    background-color: #b80000;
+  }
+  .one h1:after {
+    width: 100px;
+    height: 1px;
+    display: block;
+    content: "";
+    position: relative;
+    margin-top: 25px;
+    left: 50%;
+    margin-left: -50px;
+    background-color: #b80000;
+  }
+
+  .lightMode {
+    width: 10%;
+    height: 5%;
+    background-color: black;
+    color: white;
+    border-radius: 8px;
+  }
+  .darkMode {
+    width: 10%;
+    height: 5%;
+    background-color: white;
+    color: black;
+    border-radius: 8px;
+  }
+
+  .meme {
+    height: 800px;
+    width: 800px;
+  }
+
+  .bottom_buttons {
+    display: flex;
+    flex-direction: row;
+    width: 60%;
+    height: 20%;
+    margin-top: 1rem;
+    justify-content: space-around;
+    .lightMode_meme {
+      width: 10%;
+      height: 5%;
+      background-color: black;
+      color: white;
+      border-radius: 8px;
+    }
+    .darkMode_meme {
+      width: 10%;
+      height: 5%;
+      background-color: white;
+      color: black;
+      border-radius: 8px;
+    }
+    .lightMode_meme_link {
+      width: 10%;
+      height: 5%;
+      background-color: black;
+      color: white;
+      border-radius: 8px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+
+      padding: 0.125rem;
+      text-decoration: none;
+    }
+    .darkMode_meme_link {
+      width: 10%;
+      height: 5%;
+      background-color: white;
+      color: black;
+      border-radius: 8px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+
+      padding: 0.125rem;
+      text-decoration: none;
+    }
+  }
+}
+.MainPage_dark {
+  .title_dark {
+    color: white;
+  }
+  .title_light {
+    color: black;
+  }
+  height: 100%;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  background-color: black;
+  justify-content: center;
+  align-items: center;
+  h1 {
+    position: relative;
+    padding: 0;
+    margin: 0;
+    font-family: "Raleway", sans-serif;
+    font-weight: 300;
+    font-size: 40px;
+    color: white;
+    -webkit-transition: all 0.4s ease 0s;
+    -o-transition: all 0.4s ease 0s;
+    transition: all 0.4s ease 0s;
+  }
+
+  h1 span {
+    display: block;
+    font-size: 0.5em;
+    line-height: 1.3;
+  }
+  h1 em {
+    font-style: normal;
+    font-weight: 600;
+  }
+
+  /* === HEADING STYLE #1 === */
+  .one h1 {
+    text-align: center;
+    text-transform: uppercase;
+    padding-bottom: 5px;
+  }
+  .one h1:before {
+    width: 28px;
+    height: 5px;
+    display: block;
+    content: "";
+    position: absolute;
+    bottom: 3px;
+    left: 50%;
+    margin-left: -14px;
+    background-color: #b80000;
+  }
+  .one h1:after {
+    width: 100px;
+    height: 1px;
+    display: block;
+    content: "";
+    position: relative;
+    margin-top: 25px;
+    left: 50%;
+    margin-left: -50px;
+    background-color: #b80000;
+  }
+
+  .lightMode {
+    width: 10%;
+    height: 5%;
+    background-color: black;
+    color: white;
+    border-radius: 8px;
+  }
+  .darkMode {
+    width: 10%;
+    height: 5%;
+    background-color: white;
+    color: black;
+    border-radius: 8px;
+  }
+
+  .meme {
+    height: 800px;
+    width: 800px;
+  }
+
+  .bottom_buttons {
+    display: flex;
+    flex-direction: row;
+    width: 60%;
+    height: 20%;
+    margin-top: 1rem;
+    justify-content: space-around;
+    .lightMode_meme {
+      width: 10%;
+      height: 5%;
+      background-color: black;
+      color: white;
+      border-radius: 8px;
+    }
+    .darkMode_meme {
+      width: 10%;
+      height: 5%;
+      background-color: white;
+      color: black;
+      border-radius: 8px;
+    }
+
+    .lightMode_meme_link {
+      width: 10%;
+      height: 5%;
+      background-color: black;
+      color: white;
+      border-radius: 8px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+
+      padding: 0.125rem;
+      text-decoration: none;
+    }
+    .darkMode_meme_link {
+      width: 10%;
+      height: 5%;
+      background-color: white;
+      color: black;
+      border-radius: 8px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+
+      padding: 0.125rem;
+      text-decoration: none;
+    }
+  }
+}
+
+@media screen and (max-width: 375px) {
+  .MainPage {
+    .title_dark {
+      color: white;
+    }
+    .title_light {
+      color: black;
+    }
+    min-height: 100vh;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    background-color: white;
+    justify-content: center;
+    align-items: center;
+
+    h1 {
+      position: relative;
+      padding: 0;
+      margin: 0;
+      font-family: "Raleway", sans-serif;
+      font-weight: 300;
+      font-size: 40px;
+      color: #080808;
+      -webkit-transition: all 0.4s ease 0s;
+      -o-transition: all 0.4s ease 0s;
+      transition: all 0.4s ease 0s;
+    }
+
+    h1 span {
+      display: block;
+      font-size: 0.5em;
+      line-height: 1.3;
+    }
+    h1 em {
+      font-style: normal;
+      font-weight: 600;
+    }
+
+    /* === HEADING STYLE #1 === */
+    .one h1 {
+      text-align: center;
+      text-transform: uppercase;
+      padding-bottom: 5px;
+    }
+    .one h1:before {
+      width: 28px;
+      height: 5px;
+      display: block;
+      content: "";
+      position: absolute;
+      bottom: 3px;
+      left: 50%;
+      margin-left: -14px;
+      background-color: #b80000;
+    }
+    .one h1:after {
+      width: 100px;
+      height: 1px;
+      display: block;
+      content: "";
+      position: relative;
+      margin-top: 25px;
+      left: 50%;
+      margin-left: -50px;
+      background-color: #b80000;
+    }
+
+    .lightMode {
+      width: 35%;
+      height: 15%;
+      background-color: black;
+      color: white;
+      border-radius: 8px;
+    }
+    .darkMode {
+      width: 35%;
+      height: 15%;
+      background-color: white;
+      color: black;
+      border-radius: 8px;
+    }
+
+    .meme {
+      height: 350px;
+      width: 350px;
+    }
+
+    .bottom_buttons {
+      display: flex;
+      flex-direction: row;
+      width: 80%;
+      height: 40%;
+      margin-top: 1rem;
+      justify-content: space-around;
+      .lightMode_meme {
+        width: 25%;
+        height: 15%;
+        background-color: black;
+        color: white;
+        border-radius: 8px;
+      }
+      .darkMode_meme {
+        width: 25%;
+        height: 15%;
+        background-color: white;
+        color: black;
+        border-radius: 8px;
+      }
+      .lightMode_meme_link {
+        width: 35%;
+        height: 15%;
+        background-color: black;
+        color: white;
+        border-radius: 8px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        padding: 0.125rem;
+        text-decoration: none;
+      }
+      .darkMode_meme_link {
+        width: 35%;
+        height: 15%;
+        background-color: white;
+        color: black;
+        border-radius: 8px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+
+        padding: 0.125rem;
+        text-decoration: none;
+      }
+    }
+    .lightMode_meme_about {
+      width: 25%;
+      height: 15%;
+      background-color: black;
+      color: white;
+      border-radius: 8px;
+      margin-top: 2rem;
+    }
+    .darkMode_meme_about {
+      width: 25%;
+      height: 15%;
+      background-color: white;
+      color: black;
+      border-radius: 8px;
+      margin-top: 2rem;
+    }
+  }
+  .MainPage_dark {
+    .title_dark {
+      color: white;
+    }
+    .title_light {
+      color: black;
+    }
+    .lightMode_meme_about {
+      width: 25%;
+      height: 15%;
+      background-color: black;
+      color: white;
+      border-radius: 8px;
+      margin-top: 2rem;
+    }
+    .darkMode_meme_about {
+      width: 25%;
+      height: 15%;
+      background-color: white;
+      color: black;
+      border-radius: 8px;
+      margin-top: 2rem;
+    }
+    height: 100%;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    background-color: black;
+    justify-content: center;
+    align-items: center;
+
+    h1 {
+      position: relative;
+      padding: 0;
+      margin: 0;
+      font-family: "Raleway", sans-serif;
+      font-weight: 300;
+      font-size: 40px;
+      color: white;
+      -webkit-transition: all 0.4s ease 0s;
+      -o-transition: all 0.4s ease 0s;
+      transition: all 0.4s ease 0s;
+    }
+
+    h1 span {
+      display: block;
+      font-size: 0.5em;
+      line-height: 1.3;
+    }
+    h1 em {
+      font-style: normal;
+      font-weight: 600;
+    }
+
+    /* === HEADING STYLE #1 === */
+    .one h1 {
+      text-align: center;
+      text-transform: uppercase;
+      padding-bottom: 5px;
+    }
+    .one h1:before {
+      width: 28px;
+      height: 5px;
+      display: block;
+      content: "";
+      position: absolute;
+      bottom: 3px;
+      left: 50%;
+      margin-left: -14px;
+      background-color: #b80000;
+    }
+    .one h1:after {
+      width: 100px;
+      height: 1px;
+      display: block;
+      content: "";
+      position: relative;
+      margin-top: 25px;
+      left: 50%;
+      margin-left: -50px;
+      background-color: #b80000;
+    }
+
+    .lightMode {
+      width: 35%;
+      height: 15%;
+      background-color: black;
+      color: white;
+      border-radius: 8px;
+    }
+    .darkMode {
+      width: 35%;
+      height: 15%;
+      background-color: white;
+      color: black;
+      border-radius: 8px;
+    }
+
+    .meme {
+      height: 350px;
+      width: 350px;
+    }
+
+    .bottom_buttons {
+      display: flex;
+      flex-direction: row;
+      width: 80%;
+      height: 40%;
+      justify-content: space-around;
+      .lightMode_meme {
+        width: 10%;
+        height: 5%;
+        background-color: black;
+        color: white;
+        border-radius: 8px;
+      }
+      .darkMode_meme {
+        width: 25%;
+        height: 15%;
+        background-color: white;
+        color: black;
+        border-radius: 8px;
+      }
+      .lightMode_meme_link {
+        width: 35%;
+        height: 15%;
+        background-color: black;
+        color: white;
+        border-radius: 8px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        padding: 0.125rem;
+        text-decoration: none;
+      }
+      .darkMode_meme_link {
+        width: 35%;
+        height: 15%;
+        background-color: white;
+        color: black;
+        border-radius: 8px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        padding: 0.125rem;
+        text-decoration: none;
+      }
+    }
+  }
+}
