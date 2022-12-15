@@ -12,7 +12,7 @@ function App() {
   const fetchmeme = () => {
     try {
       let solution = axios
-        .get("https://meme-api.com/gimme")
+        .get("https://meme-api.com/gimme/dankmemes")
         .then((solution) => {
           setData(solution);
           setUrl(solution.data.url);
