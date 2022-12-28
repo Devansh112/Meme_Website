@@ -51,9 +51,6 @@ function App() {
 
   return (
     <div className={`${styles.MainPage} ${Dark ? styles.MainPage_dark : " "}`}>
-      <div className={styles.one}>
-        <h1>Some Shit Meme</h1>
-      </div>
       <button
         onClick={() => {
           setDark(!Dark);
