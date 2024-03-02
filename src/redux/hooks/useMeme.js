@@ -11,7 +11,7 @@ export const useMeme = () => {
 
   const memeUrl = useSelector((state) => state?.memeData?.memeData?.data?.url);
 
-  const isLoading = useSelector((state) => state?.isLoading);
+  const isLoading = useSelector((state) => state?.memeData?.isLoading);
 
   const fetchMeme = () => {
     dispatch(memeActionCreators.fetchMeme());
