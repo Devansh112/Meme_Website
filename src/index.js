@@ -1,14 +1,22 @@
-import React from "react";
-import ReactDOM from "react-dom/client";
-import App from "./App.jsx";
-import reportWebVitals from "./reportWebVitals";
-import { Provider } from "react-redux";
-import { store } from "./redux/store.js";
-import { PersistGate } from "redux-persist/integration/react";
-import { persistStore } from "redux-persist";
+import React from 'react';
+import ReactDOM from 'react-dom/client';
+import App from './App.jsx';
+import reportWebVitals from './reportWebVitals';
+import { Provider } from 'react-redux';
+import { store } from './redux/store.js';
+import { PersistGate } from 'redux-persist/integration/react';
+import { persistStore } from 'redux-persist';
+import { fetchMeme } from './redux/slice/meme.js';
 
-const root = ReactDOM.createRoot(document.getElementById("root"));
+// const isDataLoaded = store.getState().memeData;
+
+const root = ReactDOM.createRoot(document.getElementById('root'));
 let persistor = persistStore(store);
+
+const isDataLoaded = store.getState().memeData.memeData;
+if (isDataLoaded) {
+  store.dispatch(fetchMeme());
+}
 
 root.render(
   <React.StrictMode>

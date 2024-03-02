@@ -1,5 +1,6 @@
 import { useDispatch, useSelector } from "react-redux";
 import { toggleDark } from "../slice";
+
 export const useDark = () => {
   const dispatch = useDispatch();
 
