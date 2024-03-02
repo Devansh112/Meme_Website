@@ -11,3 +11,5 @@ export const Image = ({ memeUrl, isLoading }) => {
     <img key={Date.now()} className={styles.meme} src={memeUrl}></img>
   );
 };
+
+
